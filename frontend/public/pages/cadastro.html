@@ -1,0 +1,87 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script-cadastro.js" defer></script>
+    <title>Cadastro</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Cadastro de Produtos</h1>
+      <nav>
+        <ul>
+          <li><a href="/estoque">Gestão de Estoque</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="background">
+        <form action=""">
+          <div class="input">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" placeholder="Pão francês" required />
+          </div>
+          <div class="input">
+            <label for="descricao">Descrição</label>
+            <textarea
+              name="descricao"
+              id="descricao"
+              placeholder="Pão sequinho e crocante"
+            ></textarea>
+          </div>
+          <div class="input">
+            <label for="categoria">Categoria</label>
+            <select name="categoria" id="categoria" required>
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="paes">pães</option>
+              <option value="salgados-a">salgados assados</option>
+              <option value="salgados-f">salgados fritos</option>
+              <option value="tortas">tortas</option>
+              <option value="bolos">bolos</option>
+              <option value="sobremesas">sobremesas</option>
+              <option value="frios">frios</option>
+              <option value="bebidas">bebidas</option>
+            </select>
+          </div>
+
+          <div class="input">
+            <label for="preco">Preço</label>
+            <input id="preco" type="number" placeholder="R$" />
+          </div>
+
+          <div class="input">
+            <label for="qtd">Quantidade</label>
+            <input id="qtd" type="number" placeholder="200" />
+          </div>
+
+          <div class="input">
+            <label for="data-validade">Data de validade</label>
+            <input type="date" id="date"/>
+          </div>
+
+          <button class="btn_cadastrar">Cadastrar</button>
+        </form>
+        <div class="hidden_success">
+            <p class="hidden_success_p">Produto "produto" cadastrado com sucesso!</p>
+            <button class="btn_voltar">voltar</button>
+        </div>
+      </div>
+    </main>
+        <footer id="sobre">
+      <p>
+        Powered by Matheus A. Lima <br>
+        Curso de Desenvolvimento Web
+      </p>
+    </footer>
+  </body>
+</html>

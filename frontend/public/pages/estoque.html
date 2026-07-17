@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script-estoque.js" defer></script>
+    <title>Estoque de Produtos</title>
+  </head>
+  <body>
+    <header>
+      <h1>Estoque de Produtos</h1>
+      <nav>
+        <ul>
+          <li><a href="/cadastro">Cadastro de Produtos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+      </div>
+      <div class="editar-container">
+        <form action="" class="editar">
+          <div class="input">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" placeholder="Pão francês" required />
+          </div>
+          <div class="input">
+            <label for="descricao">Descrição</label>
+            <textarea
+              name="descricao"
+              id="descricao"
+              placeholder="Pão sequinho e crocante"
+            ></textarea>
+          </div>
+          <div class="input">
+            <label for="categoria">Categoria</label>
+            <select name="categoria" id="categoria" required>
+              <option value="" disabled selected>Selecione uma opção</option>
+              <option value="paes">pães</option>
+              <option value="salgados-a">salgados assados</option>
+              <option value="salgados-f">salgados fritos</option>
+              <option value="tortas">tortas</option>
+              <option value="bolos">bolos</option>
+              <option value="sobremesas">sobremesas</option>
+              <option value="frios">frios</option>
+              <option value="bebidas">bebidas</option>
+            </select>
+          </div>
+
+          <div class="input">
+            <label for="preco">Preço</label>
+            <input id="preco" type="number" placeholder="R$" />
+          </div>
+
+          <div class="input">
+            <label for="qtd">Quantidade</label>
+            <input id="qtd" type="number" placeholder="200" />
+          </div>
+
+          <div class="input">
+            <label for="data-validade">Data de validade</label>
+            <input type="date" id="date"/>
+          </div>
+
+          <button class="btn-salvar">Salvar</button>
+        </div>
+      </div>
+    </main>
+    <footer id="sobre">
+      <p>
+        Powered by Matheus A. Lima <br />
+        Curso de Desenvolvimento Web
+      </p>
+    </footer>
+  </body>
+</html>
