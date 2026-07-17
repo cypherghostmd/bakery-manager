@@ -59,7 +59,7 @@ app.get("/api/products", async (req, res) => {
     res.status(200).json(products);
 });
 
-app.delete("/del-product/:id", async (req, res) => {
+app.delete("/api/del-product/:id", async (req, res) => {
     let id = req.params.id;
 
     const foundProduct = await checkProductExists(id);
