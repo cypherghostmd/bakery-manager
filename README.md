@@ -85,7 +85,7 @@ http://localhost:3000
 | ------ | ---------------------- | -------------------- |
 | GET    | `/api/products`        | List all products    |
 | GET    | `/api/product/:id`     | Get a product by ID  |
-| POST   | `/api/add-product`     | Create a new product |
+| POST   | `/api/product`     | Create a new product |
 | PUT    | `/api/up-product/:id`  | Update a product     |
 | DELETE | `/api/del-product/:id` | Delete a product     |
 
